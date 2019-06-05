@@ -7,4 +7,5 @@ yarn-error.log*
 target/
 !.mvn/wrapper/maven-wrapper.jar
 vhr.wiki
+.history/
 人事管理系统需求规格说明书.doc

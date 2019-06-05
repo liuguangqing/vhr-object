@@ -1,0 +1,136 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 260046848 bytes for Failed to commit area from 0x00000000c0000000 to 0x00000000cf800000 of length 260046848.
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (os_windows.cpp:3331), pid=34136, tid=0x0000000000009540
+#
+# JRE version:  (8.0_171-b11) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.171-b11 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00000000032ee000):  JavaThread "Unknown thread" [_thread_in_vm, id=38208, stack(0x0000000004e60000,0x0000000004f60000)]
+
+Stack: [0x0000000004e60000,0x0000000004f60000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x00000000032ee000 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=38208, stack(0x0000000004e60000,0x0000000004f60000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x0000000004f61f50] Heap_lock - owner thread: 0x00000000032ee000
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x00007ff78a090000 - 0x00007ff78a0c7000 	D:\Java\jdk1.8.0_171\bin\java.exe
+0x00007ffabf930000 - 0x00007ffabfb11000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffabd790000 - 0x00007ffabd841000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ffabcb40000 - 0x00007ffabcdb3000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ffaa7d20000 - 0x00007ffaa7d37000 	C:\InetPub\ftproot\Tipray\Ldterm\ghijt64.DLL
+0x00007ffabf5e0000 - 0x00007ffabf681000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ffabda80000 - 0x00007ffabdb1e000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ffabd400000 - 0x00007ffabd45b000 	C:\WINDOWS\System32\sechost.dll
+0x00007ffabd8f0000 - 0x00007ffabda14000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ffabf3c0000 - 0x00007ffabf550000 	C:\WINDOWS\System32\USER32.dll
+0x00007ffabc180000 - 0x00007ffabc1a0000 	C:\WINDOWS\System32\win32u.dll
+0x00007ffabf360000 - 0x00007ffabf388000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ffabc1a0000 - 0x00007ffabc332000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ffabca50000 - 0x00007ffabcaef000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ffabc080000 - 0x00007ffabc178000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ffaac450000 - 0x00007ffaac6b9000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.17134.765_none_fb42a1a930655896\COMCTL32.dll
+0x00007ffabd460000 - 0x00007ffabd782000 	C:\WINDOWS\System32\combase.dll
+0x00007ffabbe10000 - 0x00007ffabbe8a000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ffaa7a80000 - 0x00007ffaa7aac000 	C:\Inetpub\ftproot\Tipray\LdTerm\LdHook64.dll
+0x00007ffabf780000 - 0x00007ffabf8d1000 	C:\WINDOWS\System32\ole32.dll
+0x00007ffab4c30000 - 0x00007ffab4cb5000 	C:\WINDOWS\SYSTEM32\WINSPOOL.DRV
+0x00007ffabbca0000 - 0x00007ffabbcb1000 	C:\WINDOWS\System32\kernel.appcore.dll
+0x00007ffab8190000 - 0x00007ffab8344000 	C:\WINDOWS\SYSTEM32\PROPSYS.dll
+0x00007ffabcdc0000 - 0x00007ffabce82000 	C:\WINDOWS\System32\OLEAUT32.dll
+0x00007ffabce90000 - 0x00007ffabcf39000 	C:\WINDOWS\System32\shcore.dll
+0x00007ffabb240000 - 0x00007ffabb278000 	C:\WINDOWS\SYSTEM32\IPHLPAPI.DLL
+0x00007ffabb7a0000 - 0x00007ffabb7c5000 	C:\WINDOWS\SYSTEM32\bcrypt.dll
+0x00007ffabf390000 - 0x00007ffabf3bd000 	C:\WINDOWS\System32\IMM32.DLL
+0x00007ffaa6e90000 - 0x00007ffaa6eeb000 	C:\Inetpub\ftproot\Tipray\LdTerm\ghhlp64.dll
+0x00007ffaa52a0000 - 0x00007ffaa5335000 	C:\Inetpub\ftproot\Tipray\LdTerm\LdSSDTHook64.dll
+0x00000000683f0000 - 0x00000000684c2000 	D:\Java\jdk1.8.0_171\jre\bin\msvcr100.dll
+0x0000000067b50000 - 0x00000000683f0000 	D:\Java\jdk1.8.0_171\jre\bin\server\jvm.dll
+0x00007ffabf160000 - 0x00007ffabf168000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007ffaba8d0000 - 0x00007ffaba8d9000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ffabcf40000 - 0x00007ffabcfac000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ffab8930000 - 0x00007ffab8953000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffaba8b0000 - 0x00007ffaba8ba000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ffab8900000 - 0x00007ffab892a000 	C:\WINDOWS\SYSTEM32\WINMMBASE.dll
+0x00007ffabcaf0000 - 0x00007ffabcb39000 	C:\WINDOWS\System32\cfgmgr32.dll
+0x0000000068c80000 - 0x0000000068c8f000 	D:\Java\jdk1.8.0_171\jre\bin\verify.dll
+0x0000000068c50000 - 0x0000000068c79000 	D:\Java\jdk1.8.0_171\jre\bin\java.dll
+0x0000000068c30000 - 0x0000000068c46000 	D:\Java\jdk1.8.0_171\jre\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Declipse.application=org.eclipse.jdt.ls.core.id1 -Dosgi.bundles.defaultStartLevel=4 -Declipse.product=org.eclipse.jdt.ls.core.product -Dfile.encoding=utf8 -DwatchParentProcess=false -Xverify:none -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication 
+java_command: C:\Users\liuguangqing\.vscode\extensions\redhat.java-0.45.0\server\plugins\org.eclipse.equinox.launcher_1.5.400.v20190514-1658.jar -configuration C:\Users\liuguangqing\.vscode\extensions\redhat.java-0.45.0\server\config_win -data c:\Users\liuguangqing\AppData\Roaming\Code\User\workspaceStorage\8a132424db52ee3458e5256d746477d5\redhat.java\jdt_ws
+java_class_path (initial): C:\Users\liuguangqing\.vscode\extensions\redhat.java-0.45.0\server\plugins\org.eclipse.equinox.launcher_1.5.400.v20190514-1658.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=D:\Java\jdk1.8.0_171
+CLASSPATH=.;D:\Java\jdk1.8.0_171\lib;D:\Java\jdk1.8.0_171\lib\tools.jar;
+PATH=D:\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python27\;C:\Python27\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;D:\Java\jdk1.8.0_171\bin;D:\Java\jdk1.8.0_171\jre\bin;;D:\Microsoft VS Code\bin;C:\Users\liuguangqing\AppData\Local\Microsoft\WindowsApps;;D:\Microsoft VS Code\bin;C:\Users\liuguangqing\AppData\Roaming\npm
+USERNAME=liuguangqing
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 142 Stepping 9, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10.0 , 64 bit Build 17134 (10.0.17134.753)
+
+CPU:total 4 (initial active 4) (2 cores per cpu, 2 threads per core) family 6 model 142 stepping 9, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, 3dnowpref, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2, adx
+
+Memory: 4k page, physical 16210944k(4035236k free), swap 26696828k(24784k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.171-b11) for windows-amd64 JRE (1.8.0_171-b11), built on Mar 28 2018 16:06:12 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Tue Jun 04 18:46:04 2019
+elapsed time: 0 seconds (0d 0h 0m 0s)
+
